@@ -130,3 +130,7 @@ table {
 input:focus {
   outline: none;
 }
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+}
