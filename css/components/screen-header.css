@@ -5,6 +5,7 @@
   align-items: center;
   padding: var(--horizontal-space);
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 .screen-header__title {
   font-size: 32px;
@@ -16,4 +17,27 @@
 }
 .screen-header__icons span {
   margin-left: 25px;
+}
+.screen-header__cog {
+  position: relative;
+}
+.screen-header__cogRed {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: tomato;
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+}
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 3s linear infinite;
+}
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
